@@ -1,0 +1,17 @@
+com\javan\dev\TestBuildingPointOfInterest.class
+com\javan\dev\TestJsonReader.class
+com\javan\dev\TestBuildingMap.class
+com\javan\dev\TestSidebarComponent.class
+com\javan\dev\TestLoginComponent.class
+com\javan\dev\TestPOIInfoWindow.class
+com\javan\dev\TestPointOfInterest.class
+com\javan\dev\TestDataProcessor.class
+com\javan\dev\TestWeather.class
+com\javan\dev\TestUser.class
+com\javan\dev\TestFloorMap.class
+com\javan\dev\TestMapFactory.class
+com\javan\dev\TestUserHelp.class
+com\javan\dev\TestCampusMap.class
+com\javan\dev\TestMapComponent.class
+com\javan\dev\TestMap.class
+com\javan\dev\TestPOIComponent.class

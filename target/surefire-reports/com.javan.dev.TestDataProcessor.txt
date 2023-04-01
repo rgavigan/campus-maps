@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.javan.dev.TestDataProcessor
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.56 s - in com.javan.dev.TestDataProcessor
