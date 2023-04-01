@@ -1,5 +1,4 @@
 # **Campus Navigation Application**
-## Group 1 - Riley Gavigan, Jake Choi, Bradley McGlynn, Dylan Sta Ana, Deep Shah
 --- 
 <br/>
 
