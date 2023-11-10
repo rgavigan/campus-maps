@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="ws-fullscreen" lang="en">
+
+<head>
+    <title>Webswing Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="favicon.ico"/>
+</head>
+
+<body>
+	<div class="webswing-element" data-webswing-instance="webswingInstance0">
+	    <div id="loading" class="ws-modal-container">
+	        <div class="ws-login">
+	            <div class="ws-login-content"><div class="ws-spinner"><div class="ws-spinner-dot-1"></div> <div class="ws-spinner-dot-2"></div></div></div>
+	        </div>
+	    </div>
+	</div>
+    <div id="adminConsoleErrorDialog" class="ws-modal-container" role="dialog" aria-labelledby="adminConsoleErrorDialog-title" aria-describedby="adminConsoleErrorDialog-description">
+	    <div class="ws-dialog">
+	        <div data-id="header" class="ws-header">
+	        	<h2 id="adminConsoleErrorDialog-title" class="ws-title">Error</h2>
+	        </div>
+	        <div class="ws-dialog-content">
+	        	<p id="adminConsoleErrorDialog-description">
+				</p>
+	        </div>
+	    </div>
+	</div>
+	
+<script>
+    var baseUrl = getBaseUrl();
+    
+    var webswingInstance0 = {
+        options: {
+            autoStart: false,
+            connectionUrl: baseUrl,
+            securityToken: getParam('securityToken'),
+            realm: getParam('realm'),
+            adminConsoleLogin: true,
+            onReady: function(api) {
+            	getAdminLoginToken(function(data) {
+            		if (data) {
+            			var json = JSON.parse(data);
+            			if (json && json.accessId) {
+            				loadAdminConsoleUrl(function(adminConsoleUrl) {
+                        		if (!document.referrer || document.referrer.length == 0) {
+            	                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=unknown";
+                        		} else if (!adminConsoleUrl || adminConsoleUrl.length == 0) {
+            	                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=not_found";
+                    			/* } else if (adminConsoleUrl.indexOf("http") == 0 && document.referrer.indexOf("http") == 0 && adminConsoleUrl.indexOf(document.referrer) != 0) {
+            	                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=referrer"; */
+                    			} else if (document.referrer.indexOf("http://localhost:9004") == 0) {
+            		                window.location.href = "http://localhost:9004/admin/" + "login.html?accessId=" + json.accessId;
+                    			} else {
+            		                window.location.href = adminConsoleUrl + "login.html?accessId=" + json.accessId + "&securitySuffix=" + getParam("securitySuffix");
+                    			}
+                    		});
+            			}
+            		} else {
+            			console.error("Failed to get accessId!");
+            		}
+            	});
+            }
+        }
+    }
+    
+    function getBaseUrl() {
+        var baseUrl = document.location.origin + document.location.pathname;
+        baseUrl = baseUrl.indexOf('adminConsoleLogin.html') > -1 ? baseUrl.split('adminConsoleLogin.html').join('') : baseUrl;
+        return baseUrl;
+    }
+    
+    function loadAdminConsoleUrl(callback) {
+    	var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                var data;
+                if (xmlhttp.status == 200) {
+                	data = xmlhttp.responseText;
+                } else if (xmlhttp.status == 401 || xmlhttp.status == 403) {
+                	// not authorized to get the url
+                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=unauthorized";
+                } else {
+                	// different problem
+                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=unknown";
+                }
+                if (callback) {
+                	(callback)(data);
+                }
+            }
+        };
+        xmlhttp.open("GET", baseUrl + "rest/adminConsoleUrl", true);
+        xmlhttp.withCredentials = true;
+        xmlhttp.send();
+    }
+    
+    function getAdminLoginToken(callback) {
+    	var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                var data;
+                if (xmlhttp.status == 200) {
+                	data = xmlhttp.responseText;
+                } else if (xmlhttp.status == 401 || xmlhttp.status == 403) {
+                	// not authorized to get the url
+                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=unauthorized";
+                } else {
+                	// different problem
+                	window.location.href = baseUrl + "adminConsoleLoginError.html?error=unknown";
+                }
+                if (callback) {
+                	(callback)(data);
+                }
+            }
+        };
+        xmlhttp.open("GET", baseUrl + "rest/adminConsoleToken", true);
+        xmlhttp.withCredentials = true;
+        xmlhttp.send();
+    }
+
+    function getParam(name) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var results = new RegExp("[\\?&]" + name + "=([^&#]*)").exec(location.href);
+        return results == null ? null : decodeURIComponent(results[1]);
+    }
+</script>
+
+<script data-webswing-global-var="webswing">
+    (function (window, document) {
+        var loader = function () {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+                    var version = xmlhttp.status == 200 ? xmlhttp.responseText : "undefined";
+                    var script = document.createElement("script"),
+                        tag = document.getElementsByTagName("script")[0];
+                    script.src = baseUrl + "javascript/webswing-embed.js?version=" + version;
+                    tag.parentNode.insertBefore(script, tag);
+                }
+            };
+            xmlhttp.open("GET", baseUrl + "rest/version", true);
+            xmlhttp.send();
+        };
+        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+    })(window, document);
+</script>
+</body>
+
+</html>

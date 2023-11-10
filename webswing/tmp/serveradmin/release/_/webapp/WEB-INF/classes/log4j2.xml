@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d %-5p [%t] (%F:%L) %m%n" />
+		</Console>
+		
+		<RollingFile name="R" fileName="${sys:webswing.logsDir:-logs/}webswing.log" filePattern="${sys:webswing.logsDir:-logs/}webswing.log.%i">
+			<PatternLayout pattern="%d %-5p [%t] (%F:%L) %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+		
+		<RollingFile name="S" fileName="${sys:webswing.logsDir:-logs/}stats.log" filePattern="${sys:webswing.logsDir:-logs/}stats.log.%i">
+			<PatternLayout pattern="%d{dd-MMM-yyyy-HH:mm:ss.SSS},%m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+		
+		<RollingFile name="A" fileName="${sys:webswing.logsDir:-logs/}audit.log" filePattern="${sys:webswing.logsDir:-logs/}audit.log.%i">
+			<PatternLayout pattern="%d{dd-MMM-yyyy-HH:mm:ss.SSS} | %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+		
+	</Appenders>
+	
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="STDOUT" />
+			<AppenderRef ref="R" />
+		</Root>
+		
+		<Logger name="org.apache.shiro" level="warn" />
+		
+		<Logger name="org.webswing.server.common.service.stats.logger" level="trace" additivity="false">
+			<AppenderRef ref="S" />
+		</Logger>
+		
+		<Logger name="org.webswing.server.api.service.audit.AuditLoggerService" level="info" additivity="false">
+			<AppenderRef ref="A" />
+		</Logger>
+	</Loggers>
+	
+</Configuration>

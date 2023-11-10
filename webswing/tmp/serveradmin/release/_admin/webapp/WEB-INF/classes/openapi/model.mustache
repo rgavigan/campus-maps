@@ -1,0 +1,16 @@
+package {{package}};
+
+{{#imports}}import {{import}};
+{{/imports}}
+{{#jackson}}
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+{{/jackson}}
+{{#serializableModel}}
+import java.io.Serializable;
+{{/serializableModel}}
+
+{{#models}}
+{{#model}}
+{{#isEnum}}{{>modelEnum}}{{/isEnum}}{{^isEnum}}{{>pojo}}{{/isEnum}}
+{{/model}}
+{{/models}}

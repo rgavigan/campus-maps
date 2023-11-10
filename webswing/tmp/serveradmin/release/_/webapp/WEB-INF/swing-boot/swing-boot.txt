@@ -1,0 +1,14 @@
+modpatch-java-desktop-23.2.1.jar
+webswing-api-23.2.1.jar
+webswing-app-launcher-23.2.1.jar
+webswing-app-toolkit-23.2.1.jar
+webswing-app-toolkit-fx-23.2.1-java11.jar
+webswing-app-toolkit-fx-23.2.1-java17.jar
+webswing-app-toolkit-fx-23.2.1-java8.jar
+webswing-app-toolkit-fx-java11-23.2.1.jar
+webswing-app-toolkit-fx-java17-23.2.1.jar
+webswing-app-toolkit-fx-java8-23.2.1.jar
+webswing-app-toolkit-java11-23.2.1.jar
+webswing-app-toolkit-java17-23.2.1.jar
+webswing-app-toolkit-java8-23.2.1.jar
+webswing-core-23.2.1.jar

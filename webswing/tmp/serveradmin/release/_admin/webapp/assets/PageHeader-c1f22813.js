@@ -1,0 +1,2 @@
+import{s as c,j as o,c as d}from"./vendor-95b30d29.js";import{a1 as t,n as l,H as h}from"./index-61e14e01.js";const u=({title:a,back:e,className:r,classes:s={}})=>{const n=c(),i=()=>{n.push(e||"/")};return o.jsx("div",{className:d(t.root,r,s.root),children:o.jsxs("div",{className:t.pageHeaderTitle,children:[e&&o.jsx(l,{color:"neutral",icon:"chevron_left",onClick:i}),o.jsx(h,{classes:{heading:s.heading,root:s.headingRoot},title:a})]})})};export{u as P};
+//# sourceMappingURL=PageHeader-c1f22813.js.map

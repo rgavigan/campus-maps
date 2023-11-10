@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d %-5p [%t] (%F:%L) %m%n" />
+		</Console>
+		
+		<RollingFile name="R" fileName="${sys:webswing.logsDir:-logs/}admin.log" filePattern="${sys:webswing.logsDir:-logs/}admin.log.%i">
+			<PatternLayout pattern="%d %-5p [%t] (%F:%L) %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+		
+		<RollingFile name="autoscaling" fileName="${sys:webswing.logsDir:-logs/}autoscaling.log" filePattern="${sys:webswing.logsDir:-logs/}autoscaling.log.%i">
+			<PatternLayout pattern="%d %-5p [%t] (%F:%L) %m%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="100 MB"/>
+			</Policies>
+			<DefaultRolloverStrategy max="5" />
+		</RollingFile>
+	</Appenders>
+	
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="STDOUT" />
+			<AppenderRef ref="R" />
+		</Root>
+		
+		<Logger name="org.webswing.admin.server.services.autoscaling.service" level="info" additivity="false">
+			<AppenderRef ref="autoscaling" />
+		</Logger>
+	</Loggers>
+	
+</Configuration>

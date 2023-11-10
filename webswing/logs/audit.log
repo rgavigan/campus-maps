@@ -1,0 +1,91 @@
+09-Nov-2023-19:57:31.944 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-19:57:38.374 | ADMIN_CONSOLE | LOGIN | admin |  | 127.0.0.1 | 
+09-Nov-2023-19:59:36.296 | ADMIN_CONSOLE | CREATE_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-19:59:36.329 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/javaVersion","value":"19.0.2"},{"op":"replace","path":"/homeDir","value":"C:\\Users\\Riley\\Downloads\\webswing-examples-eval-23.2.1\\apps\\campus_maps"},{"op":"replace","path":"/jreExecutable","value":"C:\\Program Files\\Java\\jdk-19/bin/java"},{"op":"replace","path":"/vmArgs","value":""},{"op":"add","path":"/launcherConfig/args","value":""},{"op":"add","path":"/launcherConfig/mainClass","value":"com.javan.dev.App"},{"op":"replace","path":"/classPathEntries","value":["*.jar"]},{"op":"replace","path":"/launcherSystemProperties","value":""}]
+09-Nov-2023-19:59:36.335 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:11:39.044 | ADMIN_CONSOLE | VERBOSE | admin |  | 127.0.0.1 | enabled: true
+09-Nov-2023-20:11:40.560 | ADMIN_CONSOLE | VERBOSE | admin |  | 127.0.0.1 | enabled: true
+09-Nov-2023-20:11:46.552 | ADMIN_CONSOLE | VERBOSE | admin |  | 127.0.0.1 | enabled: false
+09-Nov-2023-20:18:39.049 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"add","path":"/dataStore/module","value":"INHERITED"},{"op":"add","path":"/dataStore/config","value":{}},{"op":"add","path":"/security/module","value":"INHERITED"},{"op":"add","path":"/security/config","value":{}},{"op":"add","path":"/security/authorizationConfig","value":{"users":[],"roles":[]}},{"op":"add","path":"/security/securityContextPerTab","value":false}]
+09-Nov-2023-20:18:39.066 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/userDir","value":"C:\\webswing-campus-maps/apps/campus_maps/src/main/java"},{"op":"replace","path":"/fontConfig","value":{}}]
+09-Nov-2023-20:19:38.056 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/userDir","value":""}]
+09-Nov-2023-20:21:05.232 | ADMIN_CONSOLE | STOP_APP | admin | /netbeans | 127.0.0.1 | 
+09-Nov-2023-20:21:07.393 | ADMIN_CONSOLE | STOP_APP | admin | /migration-examples | 127.0.0.1 | 
+09-Nov-2023-20:21:09.114 | ADMIN_CONSOLE | STOP_APP | admin | /webswing-demo-applet | 127.0.0.1 | 
+09-Nov-2023-20:30:26.265 | INSTANCE | STARTED | admin | /webswing-demo | 127.0.0.1 | instanceId: webswing_demo_admin_189e77ac1457_1699579824622
+09-Nov-2023-20:31:45.533 | ADMIN_CONSOLE | SHUTDOWN | admin | /webswing-demo | 127.0.0.1 | instanceId: webswing_demo_admin_189e77ac1457_1699579824622 | force: false
+09-Nov-2023-20:31:45.537 | INSTANCE | FINISHED | admin | /webswing-demo | 127.0.0.1 | instanceId: webswing_demo_admin_189e77ac1457_1699579824622
+09-Nov-2023-20:39:02.418 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/javaVersion","value":"17.0.9"}]
+09-Nov-2023-20:39:07.604 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699580346250
+09-Nov-2023-20:39:08.336 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699580346250
+09-Nov-2023-20:39:08.357 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-20:39:12.018 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-20:39:13.509 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699580352359
+09-Nov-2023-20:39:14.200 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699580352359
+09-Nov-2023-20:39:14.220 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-20:39:21.585 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-20:39:23.092 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699580361923
+09-Nov-2023-20:39:23.366 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699580361923
+09-Nov-2023-20:39:23.407 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-20:43:44.011 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/webHomeDir","value":"${webswing.rootDir}/apps/campus-maps"}]
+09-Nov-2023-20:44:31.413 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+09-Nov-2023-20:44:39.208 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:45:56.107 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"add","path":"/classPathEntries/1","value":"*.class"}]
+09-Nov-2023-20:46:25.927 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:46:26.679 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:47:03.972 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/homeDir","value":"C:\\Users\\Riley\\Documents\\repos\\webswing-campus-maps\\apps\\campus_maps"}]
+09-Nov-2023-20:47:04.997 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:47:10.121 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:47:11.795 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:48:07.213 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:48:07.247 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:48:48.331 | INSTANCE | STARTED | admin | /webswing-demo | 127.0.0.1 | instanceId: webswing_demo_admin_189e77ac1457_1699580926843
+09-Nov-2023-20:54:01.780 | INSTANCE | FINISHED | admin | /webswing-demo | 127.0.0.1 | instanceId: webswing_demo_admin_189e77ac1457_1699580926843
+09-Nov-2023-20:55:43.060 | ADMIN_CONSOLE | REMOVE_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:55:45.312 | ADMIN_CONSOLE | REMOVE_APP | admin | /campus-maps_2 | 127.0.0.1 | 
+09-Nov-2023-20:55:51.899 | ADMIN_CONSOLE | CREATE_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:58:43.571 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"add","path":"/security/module","value":"INHERITED"},{"op":"add","path":"/security/config","value":{}},{"op":"add","path":"/security/authorizationConfig","value":{"users":[],"roles":[]}},{"op":"add","path":"/security/securityContextPerTab","value":false},{"op":"add","path":"/dataStore/module","value":"INHERITED"},{"op":"add","path":"/dataStore/config","value":{}}]
+09-Nov-2023-20:58:43.593 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/homeDir","value":"${webswing.root"},{"op":"replace","path":"/fontConfig","value":{}},{"op":"add","path":"/launcherConfig/mainClass","value":"com.javan.dev.App"},{"op":"replace","path":"/classPathEntries","value":["*.jar"]}]
+09-Nov-2023-20:58:43.662 | ADMIN_CONSOLE | START_APP | admin | /campus-maps | 127.0.0.1 | 
+09-Nov-2023-20:58:43.740 | ADMIN_CONSOLE | REMOVE_APP | admin | /campus-maps | 127.0.0.1 | 
+10-Nov-2023-09:02:51.683 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:02:54.894 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699624973402
+10-Nov-2023-09:02:55.593 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699624973402
+10-Nov-2023-09:02:55.622 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:03:50.040 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:03:50.127 | ADMIN_CONSOLE | LOGIN | admin |  | 127.0.0.1 | 
+10-Nov-2023-09:04:05.623 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/launcherConfig/mainClass","value":""}]
+10-Nov-2023-09:04:09.969 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625048748
+10-Nov-2023-09:04:10.694 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625048748
+10-Nov-2023-09:04:10.713 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:04:27.607 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/launcherConfig/mainClass","value":"com.javan.dev.App"}]
+10-Nov-2023-09:05:20.427 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:05:21.973 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625120782
+10-Nov-2023-09:05:22.710 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625120782
+10-Nov-2023-09:05:22.736 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:06:01.525 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:06:03.059 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625161862
+10-Nov-2023-09:06:03.708 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625161862
+10-Nov-2023-09:06:03.725 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:08:21.582 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:08:23.130 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625301909
+10-Nov-2023-09:08:23.861 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625301909
+10-Nov-2023-09:08:23.880 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:08:40.193 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:08:41.732 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625320519
+10-Nov-2023-09:08:42.464 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625320519
+10-Nov-2023-09:08:42.480 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:10:28.790 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/launcherConfig/mainClass","value":"com.javan.dev.group1"}]
+10-Nov-2023-09:10:32.862 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:10:34.347 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625433187
+10-Nov-2023-09:10:35.021 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625433187
+10-Nov-2023-09:10:35.036 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:11:34.275 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/launcherConfig/mainClass","value":"com.javan.dev.App"}]
+10-Nov-2023-09:12:21.170 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:12:24.761 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625543416
+10-Nov-2023-09:12:25.406 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625543416
+10-Nov-2023-09:12:25.428 | LOGOUT | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:13:20.101 | LOGIN | SUCCESS | admin | / | 127.0.0.1 | protocol: http | module: org.webswing.security.modules.demo.DemoSecurityModule
+10-Nov-2023-09:13:50.846 | ADMIN_CONSOLE | CONFIG_CHANGE | admin | /campus-maps | 127.0.0.1 | [{"op":"replace","path":"/homeDir","value":"${webswing.rootDir}/apps/campus-maps"}]
+10-Nov-2023-09:13:54.859 | INSTANCE | STARTED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625633691
+10-Nov-2023-09:15:49.366 | INSTANCE | FINISHED | admin | /campus-maps | 127.0.0.1 | instanceId: campus_maps_admin_189e77ac1457_1699625633691

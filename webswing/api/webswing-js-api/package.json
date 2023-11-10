@@ -1,0 +1,15 @@
+{
+  "name": "webswing-api",
+  "description": "Library for easy integration of Webswing to js apps.",
+  "homepage": "https://webswing.org",
+  "version": "23.2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf build"
+  }
+}
